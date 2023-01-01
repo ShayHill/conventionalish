@@ -1,4 +1,4 @@
-# cz_paragraphs
+# Conventionalish
 
 Patch Commitizen's Conventional Commits implementation with additional prefixes.
 
