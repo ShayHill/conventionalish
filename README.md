@@ -1,6 +1,23 @@
-# Conventionalish
+# Conventional With Data
+
+A branch of conventionalish with an added `data` prefix.
 
 Patch Commitizen's Conventional Commits implementation with additional prefixes.
+
+```
+QUESTIONS = [
+    ("fix", "A bug fix", "x", PATCH),
+    ("feat", "A new feature", "f", MINOR),
+    ("data", "Changes to non-code input (data, blog content, models, etc.)", "a", PATCH),
+    ("docs", "Documentation only changes", "d", None),
+    ("style", "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)", "s", None),
+    ("refactor", "A code change that neither fixes a bug nor adds a feature", "r", PATCH),
+    ("perf", "A code change that improves performance", "p", PATCH),
+    ("test", "Adding missing or correcting existing tests", "t", None),
+    ("build", "Changes that affect the build system or external dependencies (example scopes: pip, docker, npm)", "b", None),
+    ("ci", "Changes to our CI configuration files and scripts (example scopes: GitLabCI)", "c", None)
+]
+```
 
 By default, Commitizen will use its Conventional Commits implementation, so when you run `cz commit`, you will get a choice of 
 
@@ -35,7 +52,7 @@ Should you want to accomplish this by hand:
 To make these changes using a script:
 
 1. clone this project into your project root
-2. edit the `questions` value at the top of `cz_conventionalish.py`. The default value will give near-identical behavior to the Commitizen default.
+2. edit the `QUESTIONS` value at the top of `questions.py`. The default value will give near-identical behavior to the Commitizen default.
 3. install conventionalish in your project venv (`poetry add .\conventionalish`; `pip install .\conventionalish`; ...) or upload to PyPi with a new name.
 4. run with `cz -n cz_conventionalish` or add the following to `pyproject.toml`
 

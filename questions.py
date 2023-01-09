@@ -13,6 +13,7 @@ from commitizen.defaults import MAJOR, MINOR, PATCH
 QUESTIONS = [
     ("fix", "A bug fix", "x", PATCH),
     ("feat", "A new feature", "f", MINOR),
+    ("data", "Changes to non-code input (data, blog content, models, etc.)", "a", PATCH),
     ("docs", "Documentation only changes", "d", None),
     ("style", "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)", "s", None),
     ("refactor", "A code change that neither fixes a bug nor adds a feature", "r", PATCH),

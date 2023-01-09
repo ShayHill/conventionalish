@@ -8,7 +8,7 @@ to ConventionalCommitsCz instance.
 """
 
 import commitizen
-import cz_conventionalish as mod
+import cz_conventional_with_data as mod
 import pytest
 from commitizen import defaults
 from commitizen.config import BaseConfig
