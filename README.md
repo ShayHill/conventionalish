@@ -48,21 +48,21 @@ name = "cz_conventionalish"
 
 **I updated the file, but Commitizen doesn't recognize the changes.**
 
-This is an installed package, if you want to make updates:
+This is an installed package, depending how you installed it, you may need to:
 
-1. delete the `commitizenish/build` and `commitizenish/egg-info` directories
+1. delete any `commitizenish/build` or `commitizenish/egg-info` directories
 2. uninstall
 3. reinstall
 
 **How can I change the project name (`conventionalish`)?**
 
 1. change the name of this folder after you clone it
-2. update the line `name="conventionalish"` in `conventionalish/setup.py` to `name="new_folder_name"`
+2. update the line `name="conventionalish"` in `conventionalish/pyproject.toml` to `name="new_folder_name"`
 
 **How can I change the commit-rule name (`cz_conventionalish`)?**
 
 1. change the filename `conventionalish/cz_conventionalish.py` to `conventionalish/cz_new_name.py`
-2. change the line `py_modules=["cz_conventionalish"]` in `conventionalish/setup.py` to `py_modules=["cz_new_name"]`
+2. change the line `{ include = "cz_conventionalish.py" }` in `conventionalish/pyproject.toml` to `{ include = "cz_new_name.py" }`
 
 ## Author
 Shay Hill (shay_public@hotmail.com)
