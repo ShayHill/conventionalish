@@ -35,7 +35,7 @@ Should you want to accomplish this by hand:
 To make these changes using a script:
 
 1. clone this project into your project root
-2. edit the `questions` value at the top of `cz_conventionalish.py`. The default value will give near-identical behavior to the Commitizen default.
+2. edit the `QUESTIONS` value at the top of `questions.py`. The default value will give near-identical behavior to the Commitizen default.
 3. install conventionalish in your project venv (`poetry add .\conventionalish`; `pip install .\conventionalish`; ...) or upload to PyPi with a new name.
 4. run with `cz -n cz_conventionalish` or add the following to `pyproject.toml`
 
