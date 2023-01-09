@@ -70,7 +70,7 @@ def commitizen_cc(mocker):
 
 @pytest.fixture(scope="function")
 def custom_cc(mocker):
-    mocker.patch.object(mod, "questions", DEFAULT_QUESTIONS)
+    mocker.patch.object(mod, "QUESTIONS", DEFAULT_QUESTIONS)
     return mod.ConventionalishCz(config())
 
 
